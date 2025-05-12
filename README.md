@@ -15,13 +15,24 @@
     <a href="#-getting-started">Getting Started</a> •
     <a href="#-scripts-and-their-purpose">Scripts</a> •
     <a href="#-pricing-comparison">Compare to FireCrawl</a> •
-    <a href="#-join-our-community">Discord</a>
+    <a href="#-join-our-community">Discord</a> •
+    <a href="#-devdocs-roadmap">DevDocs Roadmap</a>
   </p>
 </div>
 
-<a href="https://trackgit.com">
-<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/m9io6qxdhz9wzpdse4vm" alt="trackgit-views" />
-</a>
+## 🚀 Technology Partners
+
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; padding: 20px 0;">
+
+  <img src="https://cdn.brandfetch.io/idmJWF3N06/theme/light/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Anthropic" style="height: 60px; max-width: 150px; object-fit: contain;" />
+  
+  <img src="https://cdn.brandfetch.io/idR3duQxYl/w/800/h/810/theme/light/symbol.png?c=1dxbfHSJFAPEGdCLU4o5B" alt="OpenAI" style="height: 60px; max-width: 150px; object-fit: contain;" />
+  
+  <img src="assets/image-8.png" alt="CyberAGI" style="height: 60px; max-width: 150px; object-fit: contain;" />
+  
+  <img src="https://raw.githubusercontent.com/unclecode/crawl4ai/main/docs/assets/powered-by-disco.svg" alt="Crawl4AI" style="height: 60px; max-width: 150px; object-fit: contain;" />
+
+</div>
 
 ## 🎯 Perfect For
 
@@ -334,10 +345,62 @@ Final Output Construction: The final answer should be organized, directly addres
 
 "Launched my SaaS in half the time by using DevDocs to understand and implement new technologies quickly." - *Successful Indie Hacker*
 
+## 🛣️ DevDocs Roadmap
 
-## 📝 Technology Partners
+This roadmap outlines the upcoming enhancements and features planned for DevDocs, our advanced web crawling platform powered by Crawl4AI. Each item is designed to leverage Crawl4AI’s capabilities to their fullest, ensuring a robust, efficient, and user-friendly web crawling experience.
 
-<img src="assets/image-6.png" width="200" height="100"> <img src="assets/image-7.png" width="250" height="100"> <img src="assets/image-8.png" width="300" height="100">
+⸻
+
+### 1. Enhanced Crawler Logic for Dynamic Content
+
+- Implement `wait_for_images=True` to ensure all images are fully loaded before extraction.
+- Set `scan_full_page=True` to force the crawler to scroll through the entire page, triggering lazy-loaded content.
+- Introduce `scroll_delay` to add delays between scroll steps, allowing content to load properly.
+- Incorporate `wait_for` parameters to wait for specific DOM elements indicative of content loading completion.
+
+---
+
+### 2. Hot Loading with Browser Pooling
+
+- Implement a pool of pre-warmed browser instances to avoid the overhead of launching a new browser for each task.
+- Utilize `use_persistent_context=True` to maintain session data across tasks, reducing the need for repeated logins and setups.
+
+---
+
+### 3. Revamped Docker Containers with Latest DevDocs Integration
+
+- Update Docker images to incorporate the latest DevDocs features and optimizations.
+- Include environment variables for API tokens (`CRAWL4AI_API_TOKEN`) to secure API endpoints.
+- Set appropriate memory limits and resource constraints to optimize performance.
+
+---
+
+### 4. Multi-OS Docker Instance Support
+
+- Create Docker images for different architectures (e.g., `x86_64`, `ARM`) to support a wide range of systems.
+- Implement CI/CD pipelines to build and test images across multiple OS environments, ensuring compatibility and stability.
+
+---
+
+### 5. Memory-Adaptive Crawling
+
+- Integrate DevDocs’ `MemoryAdaptiveDispatcher` to dynamically adjust concurrency based on system memory availability.
+- Implement built-in rate limiting to prevent overwhelming target websites and avoid out-of-memory errors.
+
+---
+
+### 6. PDF Upload and Extraction in UI
+
+- Utilize DevDocs’ capability to export pages as PDFs (`pdf=True`) and extract content from them.
+- Develop frontend components to handle PDF uploads, display extracted content, and allow users to interact with the data.
+
+---
+
+### 7. Hosted Environment with Persistent Storage and Enhanced UX
+
+- Implement BYO-databases solutions to store data privately, crawl results, and configurations across sessions.
+- Design intuitive dashboards and interfaces for users to manage their crawls, view results, and configure settings.
+- Ensure responsive design and accessibility across various browsers.
 
 ## Star History
 
